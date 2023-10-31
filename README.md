@@ -9,4 +9,4 @@
 
 Subcribe to the channel to see more videos like this. [Bridge Code](https://www.youtube.com/@yusifhezretli)
 
-![preview img](/158preview.png)
+![preview img](/imgs.jpg)
