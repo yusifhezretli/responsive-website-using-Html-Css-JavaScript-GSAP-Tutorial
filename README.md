@@ -7,6 +7,6 @@
 - GSAP Animation
 - Stylish Design
 
-Subcribe to the channel to see more videos like this. [Yusif Hezretli](https://www.youtube.com/@yusifhezretli)
+Subcribe to the channel to see more videos like this. ##[Yusif Hezretli](https://www.youtube.com/@yusifhezretli)
 
 ![preview img](/imgs.jpg)
