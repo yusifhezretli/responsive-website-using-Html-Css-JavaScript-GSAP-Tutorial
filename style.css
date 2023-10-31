@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    height: 100vh;
+    min-width: 400px;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 110px;
+    color: #fff;
+    padding: 0 5%;
+    font-size: 21px;
+    animation: loadAnimation 2s;
+}
+header .logo{
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: auto;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+@keyframes loadAnimation{
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+header nav .menu{
+    display: flex;
+    align-items: center;
+}
+header nav .menu li a{
+    position: relative;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.3s ease;
+}
+header nav .menu li a:hover{
+    color: #4dc0c1;
+}
+header nav #toggle{
+    font-size: 1.6rem;
+    cursor: pointer;
+    margin-left: 120px;
+    display: none;
+}
+.home{
+    padding: 2rem 5% 0;
+    color: #fff;
+    text-align: center;
+}
+.home h1{
+    font-size: 3.25rem;
+    font-weight: 500;
+}
+.home p{
+    font-size: 1.30rem;
+    font-weight: 300;
+    margin: -5px 0 30px;
+    padding-top: 20px;
+
+}
+.home button{
+    background: #4dc0c1;;
+    padding: 0.5rem 2.15rem;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0 24px 32px rgba(28, 61, 94, 0.3);
+    color: #005264;
+    transition: color 0.6s ease backgraund 0.6s ease;
+    border-radius: 25px;
+    
+}
+
+.home button:hover{
+    color: #4dc0c1;
+    background: #005264;
+}
+.home .images .img-1,
+.home .images .img-2,
+.home .images .img-3{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+}
+.images .img-1{
+    background: url(./image/img1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.images .img-2{
+    background: url(./image/img2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.images .img-3{
+    background: url(./image/img3.png);
+    background-position: center;
+    background-size: cover;
+}
+@media(max-width:787px){
+    .home h1{
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    .home p{
+        font-size: 0.90rem;
+        margin: 0 0 50px;
+    }
+    header nav #toggle{
+        display: block;
+    }
+    header nav .menu {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 3.5rem;
+        position: absolute;
+        top: 110px;
+        left: -100%;
+        background-color: rgba(30, 22, 22, 0.218) !important;
+        backdrop-filter: blur(10px);
+        width: 100%;
+        height: calc(100vh - 110px);
+        transition: left 0.4s;
+        z-index: 3;
+
+    }
+    header nav .menu li a{
+        margin-left: unset;
+        font-size: 2rem;
+        font-weight: 700;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+   
+    
+    header nav .menu.active{
+       left: 0%;
+    }
+
+}
+
